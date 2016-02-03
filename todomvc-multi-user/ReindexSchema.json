@@ -1,0 +1,51 @@
+[
+  {
+    "name": "User",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      },
+      {
+        "name": "todos",
+        "type": "Connection",
+        "ofType": "Todo",
+        "reverseName": "user"
+      }
+    ]
+  },
+  {
+    "name": "Todo",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "reverseName": "todos"
+      },
+      {
+        "name": "text",
+        "type": "String"
+      },
+      {
+        "name": "complete",
+        "type": "Boolean"
+      }
+    ]
+  }
+]

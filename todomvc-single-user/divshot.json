@@ -1,0 +1,5 @@
+{
+  "name": "reindex-todomvc-single-user",
+  "root": "./public",
+  "clean_urls": true
+}

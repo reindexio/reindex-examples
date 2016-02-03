@@ -1,0 +1,51 @@
+{
+  "name": "reindex-todomvc",
+  "version": "1.0.0",
+  "description": "Reindex TodoMVC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node devServer.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "graphiql": "reindex graphiql",
+    "schema-fetch": "reindex schema-fetch",
+    "schema-push": "reindex schema-push",
+    "schema-relay": "reindex schema-relay data/schema.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reindexio/reindex-todomvc.git"
+  },
+  "author": "Reindex <hello@reindex.io> (https://www.reindex.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reindexio/reindex-todomvc/issues"
+  },
+  "homepage": "https://github.com/reindexio/reindex-todomvc#readme",
+  "dependencies": {
+    "babel-runtime": "^5.8.20",
+    "classnames": "^2.1.3",
+    "keycodes": "^0.2.1",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "react-relay": "^0.3.2",
+    "reindex-js": "^0.3.1",
+    "todomvc-app-css": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "babel-plugin-react-transform": "^1.1.1",
+    "babel-relay-plugin": "^0.1.3",
+    "css-loader": "^0.19.0",
+    "express": "^4.13.3",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.0",
+    "redbox-react": "^1.0.1",
+    "reindex-cli": "^0.3.3",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.0",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.0.0"
+  }
+}

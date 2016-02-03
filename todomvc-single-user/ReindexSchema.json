@@ -1,0 +1,40 @@
+[
+  {
+    "name": "User",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Todo",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      },
+      {
+        "name": "text",
+        "type": "String"
+      },
+      {
+        "name": "complete",
+        "type": "Boolean"
+      }
+    ]
+  }
+]
