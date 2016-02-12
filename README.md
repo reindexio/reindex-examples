@@ -19,12 +19,20 @@ TodoMVC with user management (multiple Todo Lists)
 * [Link](https://github.com/reindexio/reindex-examples/tree/master/todomvc-multi-user)
 * [Demo](http://reindex-todomvc.surge.sh/)
 
+### [Motion](https://motion.io/) and Relay
+
+#### Motion Gallery
+
+Instagram clone. A multi-user gallery app, with file uploads and permissions.
+
+* [Link](https://github.com/reindexio/reindex-examples/tree/master/motion-gallery)
+
 ## Other resources
 
 ### Starter kits
 
 * [React, Relay, Reindex](https://github.com/reindexio/reindex-starter-kit)
-* [Flint, Relay, Reindex](https://github.com/reindexio/reindex-starter-kit-flint)
+* [Motion, Relay, Reindex](https://github.com/reindexio/reindex-starter-kit-motion)
 
 ## Third-party open-source projects
 

@@ -1,0 +1,129 @@
+body {
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body * {
+  box-sizing: border-box;
+  display: block; /* for custom tags */
+}
+
+/* Reset 2.0 */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* reset from for custom tags */
+body b  { display: inline; }
+body big  { display: inline; }
+body i  { display: inline; }
+body small  { display: inline; }
+body tt  { display: inline; }
+body abbr { display: inline; }
+body acronym  { display: inline; }
+body cite  { display: inline; }
+body code  { display: inline; }
+body dfn  { display: inline; }
+body em  { display: inline; }
+body kbd  { display: inline; }
+body strong   { display: inline; }
+body samp   { display: inline; }
+body time   { display: inline; }
+body var   { display: inline; }
+body a   { display: inline; }
+body bdo  { display: inline; }
+body br   { display: inline; }
+body img   { display: inline; }
+body map   { display: inline; }
+body object   { display: inline; }
+body q   { display: inline; }
+body script  { display: inline; }
+body span   { display: inline; }
+body sub   { display: inline; }
+body sup   { display: inline; }
+body button   { display: inline; }
+body input   { display: inline; }
+body label  { display: inline; }
+body select, textarea { display: inline; }
+html script, html title { display: none; }
+body table { display: table; }
+body tr { display: table-row; }
+body td { display: table-cell; }
+body tbody { display: table-row-group; }
+body thead { display: table-header-group; }
+body tr { display: table-row; }

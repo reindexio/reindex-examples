@@ -1,0 +1,3 @@
+BASE=$(dirname $0)
+
+reindex schema-relay $BASE/../.motion/RelaySchema.json
