@@ -4,6 +4,14 @@ Example projects using [Reindex](https://www.reindex.io/?utm_source=github).
 
 ## List of examples
 
+### React Native and Relay
+
+#### React Native Gallery
+
+Instagram clone. A multi-user gallery app, with file uploads.
+
+* [Link](https://github.com/reindexio/reindex-examples/tree/master/react-native-gallery)
+
 ### React and Relay
 
 #### TodoMVC (single-user)
@@ -23,7 +31,7 @@ TodoMVC with user management (multiple Todo Lists)
 
 #### Motion Gallery
 
-Instagram clone. A multi-user gallery app, with file uploads and permissions.
+Instagram clone. A multi-user gallery app, with file uploads.
 
 * [Link](https://github.com/reindexio/reindex-examples/tree/master/motion-gallery)
 

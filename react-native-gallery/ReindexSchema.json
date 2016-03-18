@@ -1,0 +1,122 @@
+[
+  {
+    "name": "User",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      },
+      {
+        "name": "username",
+        "type": "String"
+      },
+      {
+        "name": "avatarUrl",
+        "type": "String"
+      },
+      {
+        "name": "pictures",
+        "type": "Connection",
+        "ofType": "Picture",
+        "reverseName": "user",
+        "defaultOrdering": {
+          "field": "createdAt",
+          "order": "DESC"
+        }
+      },
+      {
+        "name": "comments",
+        "type": "Connection",
+        "ofType": "PictureComment",
+        "reverseName": "user",
+        "defaultOrdering": {
+          "field": "createdAt",
+          "order": "DESC"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Picture",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      },
+      {
+        "name": "uploadCareId",
+        "type": "String",
+        "nonNull": true
+      },
+      {
+        "name": "createdAt",
+        "type": "DateTime",
+        "nonNull": true,
+        "orderable": true
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "reverseName": "pictures"
+      },
+      {
+        "name": "comments",
+        "type": "Connection",
+        "ofType": "PictureComment",
+        "reverseName": "picture",
+        "defaultOrdering": {
+          "field": "createdAt",
+          "order": "ASC"
+        }
+      }
+    ]
+  },
+  {
+    "name": "PictureComment",
+    "kind": "OBJECT",
+    "interfaces": [
+      "Node"
+    ],
+    "fields": [
+      {
+        "name": "id",
+        "type": "ID",
+        "nonNull": true,
+        "unique": true
+      },
+      {
+        "name": "text",
+        "type": "String",
+        "nonNull": true
+      },
+      {
+        "name": "createdAt",
+        "type": "DateTime",
+        "nonNull": true,
+        "orderable": true
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "reverseName": "comments"
+      },
+      {
+        "name": "picture",
+        "type": "Picture",
+        "reverseName": "comments"
+      }
+    ]
+  }
+]

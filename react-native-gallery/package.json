@@ -1,0 +1,36 @@
+{
+  "name": "reindex-react-native-gallery",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0",
+    "react": "^0.14.7",
+    "react-native": "^0.22.0-rc",
+    "react-native-action-button": "^1.1.3",
+    "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
+    "react-native-fileupload": "^1.2.0",
+    "react-native-loading-spinner-overlay": "0.0.6",
+    "react-native-lock-android": "0.0.3",
+    "react-native-material-design": "^0.3.3",
+    "react-native-spinkit": "0.0.7",
+    "react-native-vector-icons": "^1.3.2",
+    "react-relay": "^0.7.3",
+    "reindex-js": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-eslint": "^6.0.0-beta.6",
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "babel-preset-react-native": "^1.5.2",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-relay-plugin": "^0.7.3",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.1"
+  }
+}

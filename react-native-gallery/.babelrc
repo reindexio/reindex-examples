@@ -1,0 +1,15 @@
+{
+  "passPerPreset": true,
+  "presets": [
+    {
+      "plugins": [
+        "./scripts/babelRelayPlugin"
+      ]
+    },
+    "react-native"
+  ],
+  "plugins": [
+    "syntax-async-functions"
+  ],
+  "sourceMaps": true
+}
