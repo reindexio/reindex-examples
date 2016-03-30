@@ -1,3 +1,6 @@
 import Reindex from 'reindex-js';
-const reindex = new Reindex(process.env.REINDEX_URL);
+import Config from './config';
+
+const reindex = new Reindex(Config.REINDEX_URL);
+
 export default reindex;

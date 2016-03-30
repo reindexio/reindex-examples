@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node devServer.js",
-    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "graphiql": "reindex graphiql",
-    "schema-fetch": "reindex schema-fetch",
-    "schema-push": "reindex schema-push",
-    "schema-relay": "reindex schema-relay data/schema.json"
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -42,7 +38,6 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
-    "reindex-cli": "^0.3.3",
     "style-loader": "^0.12.4",
     "webpack": "^1.12.0",
     "webpack-dev-middleware": "^1.2.0",

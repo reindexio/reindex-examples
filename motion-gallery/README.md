@@ -10,14 +10,6 @@ Install Motion and Reindex
 npm install -g motion reindex-cli
 ```
 
-Set `REINDEX_URL` env variable to be your be your Reindex app url. Set
-`REINDEX_TOKEN` to be your Reindex admin token.
-
-```
-export REINDEX_URL="https://YOUR-REINDEX-APP.myreindex.com"
-export REINDEX_TOKEN="YOUR-REINDEX-TOKEN"
-```
-
 Create file `Config.js`
 
 ```
@@ -27,6 +19,12 @@ const Config = {
 }
 
 export default Config;
+```
+
+Login to Reindex
+
+```
+reindex login
 ```
 
 Push Reindex schema in ReindexSchema.json.
@@ -42,7 +40,6 @@ Run and open on localhost:3000
 ```
 motion
 ```
-
 
 Play with GraphiQL
 

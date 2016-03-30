@@ -42,7 +42,6 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
-    "reindex-cli": "^0.3.3",
     "style-loader": "^0.12.4",
     "webpack": "^1.12.0",
     "webpack-dev-middleware": "^1.2.0",

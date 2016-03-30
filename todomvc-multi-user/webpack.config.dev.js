@@ -14,11 +14,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'REINDEX_URL': JSON.stringify(process.env.REINDEX_URL),
-      },
-    }),
     new webpack.NoErrorsPlugin()
   ],
   module: {

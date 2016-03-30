@@ -23,12 +23,11 @@ Features:
 
 * `npm install -g react-native-cli reindex-cli`
 * `npm install`
-* Set up 3rd party service configuration in config.js (Reindex, Auth0, Uploadcare)
+* Set up 3rd party service configuration in `config.js` (Reindex, Auth0, Uploadcare)
+* Login to Reindex `reindex login`
 * Push Reindex schema
 
 ```
-export REINDEX_URL="https://MY-REINDEX-APP.myreindex.com"
-export REINDEX_TOKEN="MY-REINDEX-TOKEN"
 reindex schema-push
 ```
 

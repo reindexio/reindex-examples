@@ -4,11 +4,19 @@ Single-user TodoMVC example using React, Relay and [Reindex](https://www.reindex
 
 To run examples:
 
+Add your REINDEX_URL to `./src/config.js`.
+
 ```
-export REINDEX_URL="https://YOUR-REINDEX-APP.myreindex.com"
-export REINDEX_TOKEN="YOUR-REINDEX-TOKEN"
+export default {
+  REINDEX_URL: 'YOUR-REINDEX-URL',
+};
+```
+
+```
 npm install
-npm run schema-push
-npm run schema-relay
+npm install -g reindex-cli
+reindex login
+reindex schema-push
+reindex schema-relay ./data/schema.json
 npm start
 ```
