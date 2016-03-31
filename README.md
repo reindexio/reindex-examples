@@ -39,7 +39,7 @@ Instagram clone. A multi-user gallery app, with file uploads.
 
 ### Starter kits
 
-* [React, Relay, Reindex](https://github.com/reindexio/reindex-starter-kit)
+* [React, Relay, Reindex](https://github.com/reindexio/reindex-starter-kit-react)
 * [Motion, Relay, Reindex](https://github.com/reindexio/reindex-starter-kit-motion)
 
 ## Third-party open-source projects
