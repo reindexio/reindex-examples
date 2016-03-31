@@ -29,7 +29,7 @@ class TodoList extends Component {
 
     this.props.todos.edges
       .filter((edge) => edge.node.complete !== setTo)
-      .forEach((edge) => Relay.Store.update(
+      .forEach((edge) => Relay.Store.commitUpdate(
         new ChangeTodoStatusMutation({
           id: edge.node.id,
           complete: setTo,

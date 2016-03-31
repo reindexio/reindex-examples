@@ -29,7 +29,7 @@ class TodoApp extends Component {
   }
 
   handleInputSave = (text) => {
-    Relay.Store.update(
+    Relay.Store.commitUpdate(
       new AddTodoMutation({
         text,
         user: this.props.viewer.user,
@@ -40,7 +40,7 @@ class TodoApp extends Component {
   handleClearCompleted = () => {
     this.props.viewer.user.todos.edges
       .filter((edge) => edge.node.complete)
-      .forEach((edge) => Relay.Store.update(
+      .forEach((edge) => Relay.Store.commitUpdate(
         new DeleteTodoMutation({
           id: edge.node.id,
           user: this.props.viewer.user,

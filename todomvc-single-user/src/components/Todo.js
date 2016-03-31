@@ -14,7 +14,7 @@ class Todo extends Component {
   }
 
   handleCompleteChange = () => {
-    Relay.Store.update(
+    Relay.Store.commitUpdate(
       new ChangeTodoStatusMutation({
         id: this.props.todo.id,
         complete: !this.props.todo.complete,
@@ -29,7 +29,7 @@ class Todo extends Component {
   }
 
   handleDestroyClick = () => {
-    Relay.Store.update(
+    Relay.Store.commitUpdate(
       new DeleteTodoMutation({
         id: this.props.todo.id,
         viewer: this.props.viewer,
@@ -38,7 +38,7 @@ class Todo extends Component {
   }
 
   handleInputSave = (text) => {
-    Relay.Store.update(
+    Relay.Store.commitUpdate(
       new ChangeTodoTextMutation({
         id: this.props.todo.id,
         text: text,
