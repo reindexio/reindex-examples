@@ -1,4 +1,4 @@
-# todomvc-multiuser
+# todomvc-single-user
 
 Single-user TodoMVC example using React, Relay and [Reindex](https://www.reindex.io).
 
