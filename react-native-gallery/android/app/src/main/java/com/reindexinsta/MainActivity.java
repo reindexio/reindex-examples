@@ -1,10 +1,10 @@
 package com.reindexinsta;
 
 import com.facebook.react.ReactActivity;
+import com.auth0.lock.react.LockReactPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 
-import com.auth0.lock.react.LockReactPackage;
 import com.lwansbrough.RCTCamera.*;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.yoloci.fileupload.FileUploadPackage;

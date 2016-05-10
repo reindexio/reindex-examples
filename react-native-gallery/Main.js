@@ -10,7 +10,7 @@ import Relay from 'react-relay';
 import Reindex from 'reindex-js';
 import { fromCallback } from 'bluebird';
 
-import Auth0AndroidLock from 'react-native-lock-android';
+import Auth0Lock from 'react-native-lock';
 import Spinner from 'react-native-loading-spinner-overlay';
 
 import Config from './config';
@@ -20,11 +20,6 @@ import AddPictureRoute from './routes/AddPictureRoute';
 import PictureRoute from './routes/PictureRoute';
 import StreamRoute from './routes/StreamRoute';
 import MyPicturesRoute from './routes/MyPicturesRoute';
-
-let Auth0Lock;
-if (Platform.OS === 'android') {
-  Auth0Lock = Auth0AndroidLock;
-}
 
 const reindex = new Reindex(Config.REINDEX_URL);
 Relay.injectNetworkLayer(reindex.getRelayNetworkLayer());
@@ -97,8 +92,8 @@ export default class Main extends Component {
             {
               method: 'POST',
               headers: {
-                Authorization: `Bearer ${auth0Token.accessToken}`
-              }
+                Authorization: `Bearer ${auth0Token.accessToken}`,
+              },
             }
           );
           const profile = await profileResponse.json();
