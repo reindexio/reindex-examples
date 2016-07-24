@@ -1,14 +1,6 @@
 import Relay from 'react-relay';
 
 export default class AddTodoMutation extends Relay.Mutation {
-  static fragments = {
-    viewer: () => Relay.QL`fragment on ReindexViewer {
-      id
-      allTodos {
-        count,
-      }
-    }`
-  };
 
   getMutation() {
     return Relay.QL`mutation{ createTodo }`;
